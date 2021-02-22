@@ -1,11 +1,12 @@
 import React from "react"
 import Header from "../components/header"
+import Container from "../components/container"
 
 export default function Layout({ children }) {
   return (
-    <div className="m-auto" style={{ maxWidth: 650 }}>
+    <div>
       <Header></Header>
-      {children}
+      <Container>{children}</Container>
     </div>
   )
 }
