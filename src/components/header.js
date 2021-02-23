@@ -4,7 +4,7 @@ import logo from "../images/logo.png"
 
 const ListLink = props => (
   <li className="inline-block">
-    <Link to={props.to} className="mr-10 uppercase">
+    <Link to={props.to} className="mr-10 uppercase font-medium">
       {props.children}
     </Link>
   </li>
@@ -20,7 +20,7 @@ export default function Header() {
       </div>
       <nav>
         <ul className="flex justify-center tracking-wide">
-          <ListLink to="/about-us">About Us</ListLink>
+          <ListLink to="/about">About Us</ListLink>
           <ListLink to="/gallery">Gallery</ListLink>
           <ListLink to="/events">Events</ListLink>
           <ListLink to="/crowdfunding">Crowdfunding</ListLink>
