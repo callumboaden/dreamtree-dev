@@ -13,17 +13,14 @@ const ListLink = props => (
 
 export default function Footer() {
   return (
-    <footer
-      className="mt-4"
-      style={{ backgroundColor: "rgba(135, 205, 234, 0.1)" }}
-    >
+    <footer style={{ backgroundColor: "rgba(135, 205, 234, 0.1)" }}>
       <Container>
-        <div className="flex justify-between items-center py-5">
+        <div className="flex justify-between items-center py-10">
           <div className="w-3/12">
-            <img src={logo} alt="Dreamtree" />
+            <img className="mb-0" src={logo} alt="Dreamtree" />
           </div>
           <div className="w-6/12 flex justify-center">
-            <ul>
+            <ul className="flex-col flex md:flex-row">
               <ListLink to="/contact">Contact Us</ListLink>
               <ListLink to="#">Instagram</ListLink>
               <ListLink to="#">Facebook</ListLink>
