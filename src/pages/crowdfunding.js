@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
 
 export default function Crowdfunding() {
   return (
@@ -37,7 +36,7 @@ export default function Crowdfunding() {
             We believe in the power of the queer community, and with a little
             bit of help together we can make a difference.
           </p>
-          <div className="text-center mt-10">
+          <div className="text-center">
             <a
               style={{ background: "#FF8181" }}
               className="inline-block w-1/2 text-center py-5 rounded-2xl text-white font-bold uppercase tracking-widest shadow-md hover:opacity-90"
