@@ -22,8 +22,12 @@ export default function Footer() {
           <div className="col-span-8">
             <ul className="flex text-center justify-center">
               <ListLink to="/contact">Contact Us</ListLink>
-              <ListLink to="#">Instagram</ListLink>
-              <ListLink to="#">Facebook</ListLink>
+              <ListLink to="https://www.instagram.com/dreamtreethailand/?hl=en">
+                Instagram
+              </ListLink>
+              <ListLink to="https://www.facebook.com/dreamtreeth">
+                Facebook
+              </ListLink>
             </ul>
           </div>
           <div className="col-span-2 justify-self-end">

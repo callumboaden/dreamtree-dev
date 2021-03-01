@@ -12,7 +12,7 @@ const ListLink = props => (
 
 export default function Header() {
   return (
-    <header className="mt-4">
+    <header className="pt-4">
       <div className="flex justify-center">
         <Link to="/">
           <img src={logo} alt="Dreamtree" />

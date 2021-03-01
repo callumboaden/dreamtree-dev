@@ -8,6 +8,8 @@ import aboutUsTileImage from "../images/about-us-tile.png"
 import eventsTileImage from "../images/events-tile.png"
 import galleryTileImage from "../images/gallery-tile.png"
 import crowdfundingTileImage from "../images/crowdfunding-tile.png"
+import dividerTop from "../images/dividerTop.svg"
+import background from "../images/background.jpg"
 
 import { Link } from "gatsby"
 
@@ -26,21 +28,38 @@ export default function Home() {
             <img className="mb-0" src={heroImage} alt="Dreamtree team" />
           </div>
         </div>
-        <section className="py-20" style={{ backgroundColor: "#1C2C40" }}>
+
+        <section
+          className="relative py-20"
+          style={{ backgroundColor: "#1C2C40" }}
+        >
+          <img
+            src={dividerTop}
+            alt="divider"
+            className="inline-block absolute z-0 -top-12 md:-top-16 lg:-top-20 xl:-top-32"
+          />
           <div className="max-w-screen-sm m-auto text-center">
             <img
-              className="inline-block w-10 lg:w-20"
+              className="inline-block w-10 lg:w-20 relative z-10"
               src={circles}
               alt="circles"
             />
-            <p className="text-center text-gray-50 text-sm lg:text-lg lg:leading-loose">
+            <p className="text-center text-gray-50 text-sm lg:text-lg lg:leading-loose z-10 relative">
               Dream Tree is a new initiative in Thailand. We support and empower
               the queer community through a variety of programs including:
               community events, queer media and education programs.
             </p>
           </div>
-          <div class="mt-20 max-w-screen-md m-auto">
-            <img className="rounded-2xl" src={videoImage} alt="video" />
+          <div class="mt-20 max-w-screen-md m-auto text-center">
+            <iframe
+              width="600"
+              height="360"
+              className="m-auto"
+              src="https://www.youtube.com/embed/oE31CIyTk20"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </section>
         <section className="py-20" style={{ backgroundColor: "#FFFBF4" }}>
