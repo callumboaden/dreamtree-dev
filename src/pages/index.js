@@ -19,19 +19,23 @@ export default function Home() {
       <Layout>
         <div className="bg-hero-pattern h-screen w-full absolute top-0 left-0 z-0"></div>
         <div className="text-center mt-10 relative">
-          <h1>
+          <h1 className="text-4xl md:text-5xl">
             A space to explore <br />
-            <span className="text-2xl">
+            <span className="text-xl md:text-2xl">
               the LGBTQ+ community in Thailand with #friendsofdreamtree
             </span>
           </h1>
           <div className="w-1/2 m-auto">
-            <img className="mb-0" src={heroImage} alt="Dreamtree team" />
+            <img
+              className="mb-0 hidden md:block"
+              src={heroImage}
+              alt="Dreamtree team"
+            />
           </div>
         </div>
 
         <section
-          className="relative z-100 py-20 "
+          className="relative z-100 py-20 mt-32 md:mt-0"
           style={{ backgroundColor: "#1C2C40" }}
         >
           <img
@@ -41,11 +45,11 @@ export default function Home() {
           />
           <div className="max-w-screen-sm m-auto text-center relative z-100 lg:top-12">
             <img
-              className="inline-block w-10 lg:w-20 mb-10"
+              className="inline-block w-14 lg:w-20 mb-10"
               src={circles}
               alt="circles"
             />
-            <p className="text-center text-gray-50 text-sm lg:text-lg lg:leading-loose z-10 relative">
+            <p className="text-center text-gray-50 lg:text-lg lg:leading-loose z-10 relative">
               Dream Tree is a new initiative in Thailand. We support and empower
               the queer community through a variety of programs including:
               community events, queer media and education programs.
@@ -53,9 +57,7 @@ export default function Home() {
           </div>
           <div class="mt-20 max-w-screen-md m-auto text-center">
             <iframe
-              width="600"
-              height="360"
-              className="m-auto"
+              className="m-auto w-full h-64 md:h-96"
               src="https://www.youtube.com/embed/oE31CIyTk20"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

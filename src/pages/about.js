@@ -56,13 +56,17 @@ export default function About() {
         </Container>
         <section className="pt-20" style={{ backgroundColor: "#1C2C40" }}>
           <Container>
-            <div className="flex flex-col items-center md:flex-row justify-center">
-              <div class="w-4/12 mr-20">
-                <img src={missionImage} alt="Our Mission" />
-              </div>
-              <div className="w-1/2 md:w-4/12">
+            <div className="flex flex-col items-center sm:flex-row justify-center">
+              <div class="w-1/2 md:w-4/12 mr-20">
                 <img
-                  className="inline-block w-10 lg:w-20"
+                  src={missionImage}
+                  alt="Our Mission"
+                  className="sm:w-100"
+                />
+              </div>
+              <div className="w-100 sm:w-3/4 md:w-4/12">
+                <img
+                  className="inline-block w-10 lg:w-20 mb-5"
                   src={circles}
                   alt="circles"
                 />
@@ -84,9 +88,9 @@ export default function About() {
         >
           <Container>
             <div className="flex flex-col items-center md:flex-row justify-center relative">
-              <div className="w-1/2 md:w-6/12">
+              <div className="w-100 sm:w-4/4 md:w-8/12 lg:w-6/12">
                 <img
-                  className="inline-block w-10 lg:w-20"
+                  className="inline-block w-10 lg:w-20 mb-5"
                   src={circles}
                   alt="circles"
                 />
@@ -106,15 +110,14 @@ export default function About() {
                       <li className="flex items-start mb-7">
                         <img className="mr-5" src={purpleCircle} alt="circle" />{" "}
                         <p className="text-white text-lg">
-                          Create a physical #spacetogrow for the queer community
-                          in Bangkok to learn, share and express.
+                          Develop awareness through education and advocacy.
                         </p>
                       </li>
                       <li className="flex items-start mb-7">
                         <img className="mr-5" src={purpleCircle} alt="circle" />{" "}
                         <p className="text-white text-lg">
-                          Create a physical #spacetogrow for the queer community
-                          in Bangkok to learn, share and express.
+                          Coordinate events which promote meaningful
+                          connections.
                         </p>
                       </li>
                     </ul>
@@ -124,15 +127,13 @@ export default function About() {
                       <li className="flex items-start mb-7">
                         <img className="mr-5" src={purpleCircle} alt="circle" />{" "}
                         <p className="text-white text-lg">
-                          Create a physical #spacetogrow for the queer community
-                          in Bangkok to learn, share and express.
+                          Support and empower vulnerable queer populations.
                         </p>
                       </li>
                       <li className="flex items-start mb-7">
                         <img className="mr-5" src={purpleCircle} alt="circle" />{" "}
                         <p className="text-white text-lg">
-                          Create a physical #spacetogrow for the queer community
-                          in Bangkok to learn, share and express.
+                          Create media produced for and by queer folks in Asia.
                         </p>
                       </li>
                       <li className="flex items-start mb-7">
@@ -148,7 +149,7 @@ export default function About() {
               </div>
               <div className="w-3/12 relative"></div>
               <img
-                className="absolute w-5/12"
+                className="absolute w-6/12 lg:w-5/12"
                 src={vendorsImage}
                 alt="vendors"
                 style={{ right: -150 }}
