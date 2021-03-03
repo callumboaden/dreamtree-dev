@@ -12,7 +12,7 @@ export default function Events() {
   return (
     <div>
       <Layout>
-        <div className="max-w-screen-sm	 m-auto mt-20 mb-20">
+        <div className="max-w-screen-sm	 m-auto mt-20 mb-20 z-100 relative px-5 md:px-0">
           <h1 className="mb-5">Events</h1>
           <p>Check out all our exciting upcoming events. Come join us!</p>
           <div className="flex flex-col mt-10">

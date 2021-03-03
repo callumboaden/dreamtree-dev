@@ -17,7 +17,8 @@ export default function Home() {
   return (
     <div>
       <Layout>
-        <div className="text-center mt-10">
+        <div className="bg-hero-pattern h-screen w-full absolute top-0 left-0 z-0"></div>
+        <div className="text-center mt-10 relative">
           <h1>
             A space to explore <br />
             <span className="text-2xl">
@@ -30,17 +31,17 @@ export default function Home() {
         </div>
 
         <section
-          className="relative py-20"
+          className="relative z-100 py-20 "
           style={{ backgroundColor: "#1C2C40" }}
         >
           <img
             src={dividerTop}
             alt="divider"
-            className="inline-block absolute z-0 -top-12 md:-top-16 lg:-top-20 xl:-top-32"
+            className="inline-block absolute z-10 -top-12 md:-top-16 lg:-top-20 xl:-top-28"
           />
-          <div className="max-w-screen-sm m-auto text-center">
+          <div className="max-w-screen-sm m-auto text-center relative z-100 lg:top-12">
             <img
-              className="inline-block w-10 lg:w-20 relative z-10"
+              className="inline-block w-10 lg:w-20 mb-10"
               src={circles}
               alt="circles"
             />
