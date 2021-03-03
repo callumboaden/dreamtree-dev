@@ -16,10 +16,10 @@ export default function Footer() {
     <footer style={{ backgroundColor: "rgba(135, 205, 234, 0.1)" }}>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 items-center py-7">
-          <div className="col-span-2 justify-start hidden md:block">
+          <div className="col-span-2 md:col-span-2 justify-start hidden md:block">
             <img className="mb-0" src={logo} alt="Dreamtree" />
           </div>
-          <div className="col-span-1 md:col-span-7">
+          <div className="col-span-1 md:col-span-8 justify-center">
             <ul className="flex text-center justify-center">
               <ListLink to="/contact">Contact Us</ListLink>
               <ListLink to="https://www.instagram.com/dreamtreethailand/?hl=en">
@@ -30,7 +30,7 @@ export default function Footer() {
               </ListLink>
             </ul>
           </div>
-          <div className="col-span-1 md:col-span-3 justify-self-center md:justify-self-end">
+          <div className="col-span-1 md:col-span-2 justify-self-center md:justify-self-end">
             <p className="text-sm">Copyright © 2021 Dream Tree Thailand</p>
           </div>
         </div>
