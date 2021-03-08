@@ -12,18 +12,20 @@ import taylorImage from "../images/taylor.png"
 import MayaImage from "../images/maya.png"
 import HannahImage from "../images/hannah.png"
 import leaves from "../images/leaves.svg"
+import dividerTop from "../images/dividerTop.svg"
+import dividerBottom from "../images/dividerBottom.svg"
 
 import { Link } from "gatsby"
 
 const ProfileImage = props => (
   <div>
-    <img src={props.imgSrc} alt={props.imgAlt} />
-    <div class="flex flex-col items-center">
-      <h3 className="font-bold text-2xl pr-2"> {props.name}</h3>
+    <img src={props.imgSrc} alt={props.imgAlt} className="w-40 md:w-full" />
+    <div class="flex flex-col items-center mt-5">
+      <h3 className="font-bold text-2xl"> {props.name}</h3>
       <span className="text-sm">{props.title}</span>
     </div>
 
-    <p class="uppercase text-center tracking-widest font-medium text-md mt-5">
+    <p class="uppercase text-center tracking-widest font-medium text-sm mt-3">
       {props.role}
     </p>
   </div>
@@ -35,7 +37,7 @@ export default function About() {
       <Layout>
         <Container>
           <div class="flex flex-col items-center md:flex-row md:items-start justify-center mt-10">
-            <div className="w-100 md:w-4/12 mr-16">
+            <div className="w-100 md:w-6/12 lg:w-4/12 md:mr-16">
               <h1 className="mb-5">What we do</h1>
               <p className="mb-5 leading-loose text-lg">
                 Dream Tree creates all inclusive spaces where folks can make
@@ -49,12 +51,21 @@ export default function About() {
                 different folks!
               </p>
             </div>
-            <div className="w-1/2 md:w-4/12">
+            <div className="w-1/2 md:w-4/12 hidden md:block">
               <img src={tree} alt="Dreamtree" />
             </div>
           </div>
         </Container>
-        <section className="pt-20" style={{ backgroundColor: "#1C2C40" }}>
+
+        <section
+          className="pt-20 mt-10 relative"
+          style={{ backgroundColor: "#1C2C40" }}
+        >
+          <img
+            src={dividerTop}
+            alt="divider"
+            className="inline-block absolute z-20 -top-12 md:-top-16 lg:-top-20 xl:-top-28"
+          />
           <Container>
             <div className="flex flex-col items-center sm:flex-row justify-center">
               <div class="w-1/2 md:w-4/12 mr-20">
@@ -158,17 +169,25 @@ export default function About() {
           </Container>
         </section>
 
-        <section className="py-20" style={{ backgroundColor: "#FFFBF4" }}>
+        <section
+          className="py-20 relative"
+          style={{ backgroundColor: "#FFFBF4" }}
+        >
+          <img
+            src={dividerBottom}
+            alt="divider"
+            className="inline-block absolute z-20 sm:-top-10 -top-4 md:-top-24"
+          />
           <div className="text-center mb-20">
             <img
-              className="inline-block w-10 lg:w-32"
+              className="inline-block w-28 md:w-32 mb-4"
               src={leaves}
               alt="leaves"
             />
             <h2 className="text-3xl font-bold">Meet The Team</h2>
           </div>
           <Container>
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-2 justify-items-center md:grid-cols-4 gap-10 max-w-screen-lg	m-auto">
               <ProfileImage
                 imgSrc={zaakImage}
                 name="Zaak"

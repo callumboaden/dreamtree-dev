@@ -14,9 +14,7 @@ export default function Crowdfunding() {
             empower the queer community and are looking to expand our reach.
           </p>
           <iframe
-            width="600"
-            height="360"
-            className="m-auto mt-5 mb-10 inline-block"
+            className="m-auto w-full h-64 md:h-96 mb-5"
             src="https://www.youtube.com/embed/oE31CIyTk20"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

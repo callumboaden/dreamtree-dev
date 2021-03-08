@@ -9,6 +9,7 @@ import eventsTileImage from "../images/events-tile.png"
 import galleryTileImage from "../images/gallery-tile.png"
 import crowdfundingTileImage from "../images/crowdfunding-tile.png"
 import dividerTop from "../images/dividerTop.svg"
+import dividerBottom from "../images/dividerBottom.svg"
 import background from "../images/background.jpg"
 
 import { Link } from "gatsby"
@@ -18,16 +19,16 @@ export default function Home() {
     <div>
       <Layout>
         <div className="bg-hero-pattern h-screen w-full absolute top-0 left-0 z-0"></div>
-        <div className="text-center mt-10 relative">
+        <div className="text-center mt-10 relative ">
           <h1 className="text-4xl md:text-5xl">
             A space to explore <br />
             <span className="text-xl md:text-2xl">
               the LGBTQ+ community in Thailand with #friendsofdreamtree
             </span>
           </h1>
-          <div className="w-1/2 m-auto">
+          <div className="w-full md:w-6/12 m-auto relative">
             <img
-              className="mb-0 hidden md:block"
+              className="mb-0 absolute left-0 top-0 md:relative md:block"
               src={heroImage}
               alt="Dreamtree team"
             />
@@ -35,7 +36,7 @@ export default function Home() {
         </div>
 
         <section
-          className="relative z-100 py-20 mt-32 md:mt-0"
+          className="relative mt-72 sm:mt-96 z-100 py-20 mt-32 md:mt-0"
           style={{ backgroundColor: "#1C2C40" }}
         >
           <img
@@ -43,13 +44,13 @@ export default function Home() {
             alt="divider"
             className="inline-block absolute z-10 -top-12 md:-top-16 lg:-top-20 xl:-top-28"
           />
-          <div className="max-w-screen-sm m-auto text-center relative z-100 lg:top-12">
+          <div className="max-w-screen-sm m-auto text-center relative z-50">
             <img
               className="inline-block w-14 lg:w-20 mb-10"
               src={circles}
               alt="circles"
             />
-            <p className="text-center text-gray-50 lg:text-lg lg:leading-loose z-10 relative">
+            <p className="text-center text-gray-50 px-5 lg:text-xl lg:leading-loose z-10 relative">
               Dream Tree is a new initiative in Thailand. We support and empower
               the queer community through a variety of programs including:
               community events, queer media and education programs.
@@ -57,7 +58,7 @@ export default function Home() {
           </div>
           <div class="mt-20 max-w-screen-md m-auto text-center">
             <iframe
-              className="m-auto w-full h-64 md:h-96"
+              className="m-auto w-full h-64 md:h-96 z-40 relative"
               src="https://www.youtube.com/embed/oE31CIyTk20"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -65,30 +66,54 @@ export default function Home() {
             ></iframe>
           </div>
         </section>
-        <section className="py-20" style={{ backgroundColor: "#FFFBF4" }}>
+        <section
+          className="py-20 relative"
+          style={{ backgroundColor: "#FFFBF4" }}
+        >
+          <img
+            src={dividerBottom}
+            alt="divider"
+            className="inline-block absolute z-20 sm:-top-10 -top-4 md:-top-24"
+          />
           <div className="text-center mb-20">
             <img
-              className="inline-block w-10 lg:w-32"
+              className="inline-block w-28 md:w-32 mb-4"
               src={leaves}
               alt="leaves"
             />
             <h2 className="text-3xl font-bold">Gather, Understand, Grow.</h2>
           </div>
-          <div className="max-w-screen-md m-auto grid grid-cols-4 gap-4">
+          <div className="max-w-screen-md m-auto grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
             <Link to="/about" className="text-center">
-              <img src={aboutUsTileImage} alt="About Us" />
+              <img
+                src={aboutUsTileImage}
+                alt="About Us"
+                className="w-40 md:w-full mb-3"
+              />
               <p className="font-medium tracking-widest">About Us</p>
             </Link>
             <Link to="/gallery" className="text-center">
-              <img src={eventsTileImage} alt="Events" />
+              <img
+                src={eventsTileImage}
+                alt="Events"
+                className="w-40 md:w-full mb-3"
+              />
               <p className="font-medium tracking-widest">Events</p>
             </Link>
             <Link to="/events" className="text-center">
-              <img src={galleryTileImage} alt="About Us" />
+              <img
+                src={galleryTileImage}
+                alt="About Us"
+                className="w-40 md:w-full mb-3"
+              />
               <p className="font-medium tracking-widest">Gallery</p>
             </Link>
             <Link to="/crowdfunding" className="text-center">
-              <img src={crowdfundingTileImage} alt="About Us" />
+              <img
+                src={crowdfundingTileImage}
+                alt="About Us"
+                className="w-40 md:w-full mb-3"
+              />
               <p className="font-medium tracking-widest">Crowdfunding</p>
             </Link>
           </div>
