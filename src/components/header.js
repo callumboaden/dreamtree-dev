@@ -20,7 +20,7 @@ function toggleMenu() {
 
 export default function Header() {
   return (
-    <header className="pt-4 z-10 relative flex container md:py-0 m-auto items-center justify-between mt-5">
+    <header className="pt-4 z-10 relative flex max-w-screen-xl md:py-0 m-auto items-center justify-between mt-5">
       <div className="flex justify-center pl-5 md:pl-0">
         <Link to="/">
           <img src={logo} alt="Dreamtree" className="w-3/4 md:w-full" />
