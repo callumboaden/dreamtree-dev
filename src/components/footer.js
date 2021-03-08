@@ -17,7 +17,7 @@ export default function Footer() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 items-center py-7">
           <div className="col-span-2 md:col-span-2 justify-start hidden md:block">
-            <img className="mb-0" src={logo} alt="Dreamtree" />
+            <img className="mb-0" src={logo} alt="Dreamtree" className="w-24" />
           </div>
           <div className="col-span-1 md:col-span-8 justify-center">
             <ul className="flex text-center justify-center">
