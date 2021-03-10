@@ -8,13 +8,25 @@ import facebookIcon from "../images/icon-facebook.svg"
 import instagramIcon from "../images/icon-instagram.svg"
 
 export default function Events(props) {
+  const time = props.date.split("2021,")[1]
+  const shareFacebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F${
+    props.link.split("https://")[1]
+  }`
+
   return (
     <div className="flex flex-col mt-10">
       <div
         style={{ backgroundColor: "#FFFBF4" }}
         className="shadow-xl rounded-b-3xl mb-10"
       >
-        <img src={eventImage} alt="Event name" />
+        <a href={props.link} target="_blank">
+          <img
+            src={props.imageUrl}
+            alt="Event name"
+            className="rounded-tl-3xl rounded-tr-3xl"
+          />
+        </a>
+
         <div className="p-8">
           <div className="flex mb-5">
             <div className="flex items-end mr-6">
@@ -32,7 +44,7 @@ export default function Events(props) {
                 className="uppercase tracking-widest font-bold text-xs pl-2"
                 style={{ color: "#F27270" }}
               >
-                Event Time
+                {time}
               </h4>
             </div>
             <div className="flex items-end mr-6">
@@ -41,7 +53,7 @@ export default function Events(props) {
                 className="uppercase tracking-widest font-bold text-xs pl-2"
                 style={{ color: "#F27270" }}
               >
-                Event Location
+                {props.locationName}
               </h4>
             </div>
           </div>
@@ -51,16 +63,18 @@ export default function Events(props) {
           <div className="flex justify-between items-center mt-10">
             <a
               style={{ background: "#FF8181" }}
-              className="inline-block w-1/3 text-center py-4 text-sm rounded-2xl text-white font-bold uppercase tracking-widest shadow-md hover:opacity-90"
-              href="https://www.gofundme.com/f/fund-dream-tree"
+              className="inline-block px-6 text-center py-4 text-xs rounded-2xl text-white font-bold uppercase tracking-widest shadow-md hover:opacity-90"
+              href={props.link}
               target="_blank"
             >
-              More details
+              Learn More
             </a>
             <div className="flex items-center">
-              <h6 className="mr-6">Share</h6>
-              <img className="mr-2" src={facebookIcon} alt="Facebook" />
-              <img src={instagramIcon} alt="Instagram" />
+              <h6 className="mr-6 text-xs sm:text-sm">Share</h6>
+              <a href={shareFacebookUrl} target="_blank">
+                <img className="mr-2" src={facebookIcon} alt="Facebook" />
+              </a>
+              <img src={instagramIcon} alt="Instagram" className="hidden" />
             </div>
           </div>
         </div>

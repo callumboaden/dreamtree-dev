@@ -18,17 +18,20 @@ export default function Home() {
   return (
     <div>
       <Layout>
-        <div className="bg-hero-pattern h-screen w-full absolute top-0 left-0 z-0"></div>
+        <div
+          style={{ height: "120vh" }}
+          className="bg-hero-pattern w-full absolute top-0 left-0 z-0"
+        ></div>
         <div className="text-center mt-10 relative ">
           <h1 className="text-4xl md:text-5xl">
             A space to explore <br />
-            <span className="text-xl md:text-2xl">
+            <span className="text-lg sm:text-xl md:text-2xl inline-block">
               the LGBTQ+ community in Thailand with #friendsofdreamtree
             </span>
           </h1>
-          <div className="w-full md:w-6/12 m-auto relative">
+          <div className="w-full md:w-7/12 m-auto relative">
             <img
-              className="mb-0 absolute left-0 top-0 md:relative md:block"
+              className="mb-0 relative left-0 top-0"
               src={heroImage}
               alt="Dreamtree team"
             />
@@ -36,7 +39,7 @@ export default function Home() {
         </div>
 
         <section
-          className="relative mt-72 sm:mt-96 z-100 py-20 mt-32 md:mt-0"
+          className="relative z-100 py-20"
           style={{ backgroundColor: "#1C2C40" }}
         >
           <img
@@ -83,7 +86,7 @@ export default function Home() {
             />
             <h2 className="text-3xl font-bold">Gather, Understand, Grow.</h2>
           </div>
-          <div className="max-w-screen-md m-auto grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div className="max-w-screen-md m-auto px-5 sm:px-0 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
             <Link to="/about" className="text-center">
               <img
                 src={aboutUsTileImage}

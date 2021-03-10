@@ -5,7 +5,7 @@ export default function Crowdfunding() {
   return (
     <div>
       <Layout>
-        <div className="max-w-screen-sm	 m-auto mt-20 mb-20">
+        <div className="max-w-screen-sm	px-5 m-auto mt-20 mb-20">
           <h1 className="mb-5">Crowdfunding</h1>
           <p className="mb-5 leading-loose text-lg">
             Dream Tree is a new initiative in Thailand which aims to foster a
@@ -37,7 +37,7 @@ export default function Crowdfunding() {
           <div className="text-center">
             <a
               style={{ background: "#FF8181" }}
-              className="inline-block w-1/2 text-center py-5 rounded-2xl text-white font-bold uppercase tracking-widest shadow-md hover:opacity-90"
+              className="text-sm inline-block w-1/2 text-center py-5 rounded-2xl text-white font-bold uppercase tracking-widest shadow-md hover:opacity-90"
               href="https://www.gofundme.com/f/fund-dream-tree"
               target="_blank"
             >

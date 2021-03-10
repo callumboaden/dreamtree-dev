@@ -6,7 +6,7 @@ const ListLink = props => (
   <li className="inline-block py-4 md:py-0">
     <Link
       to={props.to}
-      className="mr-10 uppercase font-medium text-sm hover:opacity-80"
+      className="mr-10 uppercase font-medium text-md md:text-sm hover:opacity-80"
     >
       {props.children}
     </Link>
@@ -20,7 +20,7 @@ function toggleMenu() {
 
 export default function Header() {
   return (
-    <header className="pt-4 z-10 relative flex max-w-screen-xl md:py-0 m-auto items-center justify-between mt-5">
+    <header className="pt-4 z-50 relative flex max-w-screen-xl md:py-0 m-auto items-center justify-between mt-5">
       <div className="flex justify-center pl-5 md:pl-0">
         <Link to="/">
           <img src={logo} alt="Dreamtree" className="w-3/4 md:w-full" />
@@ -49,8 +49,8 @@ export default function Header() {
           />
         </svg>
       </button>
-      <nav className="hidden absolute z-90 w-full bg-white md:bg-transparent top-full mt-3 pl-5 md:relative md:top-0 md:block navbar">
-        <ul className="flex flex-col md:flex-row justify-center tracking-wide mt-3 z-100">
+      <nav className="hidden top-0 absolute z-90 w-full bg-white md:bg-transparent top-full mt-3 pl-5 md:relative md:top-0 md:block navbar shadow-md md:shadow-none">
+        <ul className="flex flex-col md:flex-row justify-center tracking-wide mt-3 z-100 h-100">
           <ListLink to="/about">About Us</ListLink>
           <ListLink to="/gallery">Gallery</ListLink>
           <ListLink to="/events">Events</ListLink>

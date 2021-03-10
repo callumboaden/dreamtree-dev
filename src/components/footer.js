@@ -5,7 +5,10 @@ import logo from "../images/logo.png"
 
 const ListLink = props => (
   <li className="inline-block font-medium tracking-wide">
-    <Link to={props.to} className="text-sm md:text-md uppercase mr-5 md:mr-10">
+    <Link
+      to={props.to}
+      className="text-xs sm:text-sm md:text-md uppercase mr-5 md:mr-10"
+    >
       {props.children}
     </Link>
   </li>

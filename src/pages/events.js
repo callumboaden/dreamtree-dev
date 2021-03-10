@@ -11,9 +11,16 @@ export default function Events() {
         allContentfulEvent {
           edges {
             node {
-              date
+              date(formatString: "DD MMMM, YYYY, hA")
               description
               name
+              url
+              locationName
+              image {
+                file {
+                  url
+                }
+              }
             }
           }
         }
@@ -34,6 +41,9 @@ export default function Events() {
                 name={edge.node.name}
                 date={edge.node.date}
                 description={edge.node.description}
+                imageUrl={edge.node.image.file.url}
+                link={edge.node.url}
+                locationName={edge.node.locationName}
               ></Event>
             )
           })}
