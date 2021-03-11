@@ -24,7 +24,15 @@ export default function Footer() {
           </div>
           <div className="col-span-1 md:col-span-8 justify-center">
             <ul className="flex text-center justify-center">
-              <ListLink to="/contact">Contact Us</ListLink>
+              <li className="inline-block font-medium tracking-wide">
+                <a
+                  href="mailto:info@dreamtreethailand.com"
+                  className="text-xs sm:text-sm md:text-md uppercase mr-5 md:mr-10"
+                >
+                  Contact Us
+                </a>
+              </li>
+
               <ListLink to="https://www.instagram.com/dreamtreethailand/?hl=en">
                 Instagram
               </ListLink>
