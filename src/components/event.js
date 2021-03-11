@@ -6,7 +6,6 @@ import facebookIcon from "../images/icon-facebook.svg"
 import instagramIcon from "../images/icon-instagram.svg"
 
 export default function Events(props) {
-  const time = props.date.split("2021,")[1]
   const shareFacebookUrl = `https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F${
     props.link.split("https://")[1]
   }`
@@ -34,15 +33,6 @@ export default function Events(props) {
                 style={{ color: "#F27270" }}
               >
                 {props.date}
-              </h4>
-            </div>
-            <div className="flex items-end mr-6">
-              <img src={clockIcon} alt="Event Time" />
-              <h4
-                className="uppercase tracking-widest font-bold text-xs pl-2"
-                style={{ color: "#F27270" }}
-              >
-                {time}
               </h4>
             </div>
             <div className="flex items-end mr-6">
