@@ -1,6 +1,4 @@
 import React from "react"
-
-import eventImage from "../images/event.jpg"
 import calendarIcon from "../images/calendar.svg"
 import clockIcon from "../images/clock.svg"
 import locationIcon from "../images/pin.svg"
