@@ -15,7 +15,7 @@ export default function Crowdfunding() {
           </p>
           <iframe
             className="m-auto w-full h-64 md:h-96 mb-5"
-            src="https://www.youtube.com/embed/oE31CIyTk20"
+            src="https://www.youtube.com/embed/200XuXYv4VY"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen

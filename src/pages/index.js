@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import heroImage from "../images/home-hero-image.png"
+import heroImage from "../images/home-hero-image.webp"
 import circles from "../images/circles.svg"
 import leaves from "../images/leaves.svg"
 import aboutUsTileImage from "../images/about-us-tile.png"
@@ -60,7 +60,7 @@ export default function Home() {
           <div class="mt-20 max-w-screen-md m-auto text-center">
             <iframe
               className="m-auto w-full h-64 md:h-96 z-40 relative"
-              src="https://www.youtube.com/embed/oE31CIyTk20"
+              src="https://www.youtube.com/embed/200XuXYv4VY"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -93,7 +93,7 @@ export default function Home() {
               />
               <p className="font-medium tracking-widest">About Us</p>
             </Link>
-            <Link to="/gallery" className="text-center">
+            <Link to="/events" className="text-center">
               <img
                 src={eventsTileImage}
                 alt="Events"
@@ -101,7 +101,7 @@ export default function Home() {
               />
               <p className="font-medium tracking-widest">Events</p>
             </Link>
-            <Link to="/events" className="text-center">
+            <Link to="/gallery" className="text-center">
               <img
                 src={galleryTileImage}
                 alt="About Us"

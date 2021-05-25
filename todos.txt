@@ -1,0 +1,9 @@
+Dreamtree Thailand Feedback
+- add youtube link
+- team section / update taylor pronouns
+- team section / add bios popup / modal
+- about section / update hero image
+
+- add photos to gallery / add gallery update to cms
+- add newsletter signup
+-- contentfful api update
