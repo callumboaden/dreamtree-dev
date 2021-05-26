@@ -197,7 +197,7 @@ export default function About() {
               <ProfileImage
                 imgSrc={taylorImage}
                 name="Taylor"
-                title="(he/him, they/ them)"
+                title="(she/her)"
                 role="Co-founder"
               ></ProfileImage>
               <ProfileImage

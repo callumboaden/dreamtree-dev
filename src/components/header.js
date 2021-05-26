@@ -54,7 +54,6 @@ export default function Header() {
           <ListLink to="/about">About Us</ListLink>
           <ListLink to="/gallery">Gallery</ListLink>
           <ListLink to="/events">Events</ListLink>
-          <ListLink to="/crowdfunding">Crowdfunding</ListLink>
         </ul>
       </nav>
       <a

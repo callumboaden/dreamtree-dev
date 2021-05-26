@@ -109,14 +109,6 @@ export default function Home() {
               />
               <p className="font-medium tracking-widest">Gallery</p>
             </Link>
-            <Link to="/crowdfunding" className="text-center">
-              <img
-                src={crowdfundingTileImage}
-                alt="About Us"
-                className="w-40 md:w-full mb-3"
-              />
-              <p className="font-medium tracking-widest">Crowdfunding</p>
-            </Link>
           </div>
         </section>
       </Layout>
