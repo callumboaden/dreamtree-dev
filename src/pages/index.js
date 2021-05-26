@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </section>
         <section
-          className="py-20 relative"
+          className="py-20 mt-5 relative"
           style={{ backgroundColor: "#FFFBF4" }}
         >
           <img
@@ -84,7 +84,7 @@ export default function Home() {
             />
             <h2 className="text-3xl font-bold">Gather, Understand, Grow.</h2>
           </div>
-          <div className="max-w-screen-md m-auto px-5 sm:px-0 grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+          <div className="max-w-screen-md m-auto px-5 sm:px-0 grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
             <Link to="/about" className="text-center">
               <img
                 src={aboutUsTileImage}
